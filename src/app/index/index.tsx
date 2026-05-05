@@ -2,6 +2,7 @@ import { MaterialIcons } from "@expo/vector-icons";
 import { Image, TouchableOpacity, View } from "react-native";
 
 import { Categories } from "@/components/categories";
+import { Link } from "@/components/link";
 import { colors } from "@/styles/colors";
 import { styles } from "./styles";
 
@@ -16,6 +17,11 @@ export default function Index() {
         </TouchableOpacity>
       </View>
       <Categories />
+      <Link
+        name="Rocketseat"
+        url="https://rocketseat.com.br"
+        onDetails={() => console.log("clicou!")}
+      />
     </View>
   );
 }
