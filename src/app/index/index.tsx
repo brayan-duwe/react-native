@@ -54,9 +54,9 @@ export default function Index() {
             </View>
             <Text style={styles.modalLinkName}>Rocketseat</Text>
             <Text style={styles.modalURL}>https://rocketseat.com.br</Text>
-            <View>
-              <Option name="Excluir" icon="delete" variant="secondary" />
+            <View style={styles.modalFooter}>
               <Option name="Abrir" icon="language" />
+              <Option name="Excluir" icon="delete" variant="secondary" />
             </View>
           </View>
         </View>
