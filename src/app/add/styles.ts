@@ -8,19 +8,25 @@ export const styles = StyleSheet.create({
   },
   header: {
     flexDirection: "row",
-    justifyContent: "space-between",
     paddingHorizontal: 24,
     marginBottom: 24,
+  },
+  titleLocation: {
+    flex: 1,
   },
   title: {
     color: colors.gray[200],
     fontSize: 24,
     fontWeight: "600",
-    alignItems: "center",
+    textAlign: "center",
   },
   label: {
     color: colors.gray[400],
     fontSize: 14,
     paddingHorizontal: 24,
+  },
+  form: {
+    padding: 20,
+    gap: 12,
   },
 });

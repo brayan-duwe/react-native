@@ -1,4 +1,6 @@
+import { Button } from "@/components/button";
 import { Categories } from "@/components/categories";
+import { Input } from "@/components/input";
 import { colors } from "@/styles/colors";
 import { MaterialIcons } from "@expo/vector-icons";
 import { router } from "expo-router";
@@ -12,11 +14,18 @@ export default function Add() {
         <TouchableOpacity onPress={() => router.back()}>
           <MaterialIcons name="arrow-back" size={32} color={colors.gray[200]} />
         </TouchableOpacity>
-
-        <Text style={styles.title}>New</Text>
+        <View style={styles.titleLocation}>
+          <Text style={styles.title}>New</Text>
+        </View>
+        <View style={{ width: 32 }} />
       </View>
       <Text style={styles.label}>Select a category</Text>
       <Categories />
+      <View style={styles.form}>
+        <Input placeholder="Name" />
+        <Input placeholder="URL" />
+        <Button title="Add" />
+      </View>
     </View>
   );
 }
