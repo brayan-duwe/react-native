@@ -16,6 +16,7 @@ export const styles = StyleSheet.create({
     color: colors.gray[200],
     fontSize: 24,
     fontWeight: "600",
+    alignItems: "center",
   },
   label: {
     color: colors.gray[400],
